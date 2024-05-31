@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Hamilton</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #d9534f;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 20px;
+        }
+        img {
+            width: 100%;
+            max-width: 400px;
+        }
+        #clock {
+            font-size: 20px;
+            color: #5bc0de;
+            margin: 20px 0;
+        }
+    </style>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var timeString = hours.toString().padStart(2, '0') + ':' +
+                             minutes.toString().padStart(2, '0') + ':' +
+                             seconds.toString().padStart(2, '0');
+            document.getElementById('clock').innerText = timeString;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+</head>
+<body onload="updateClock()">
+
+    <nav>
+        <a href="index.html">Historia</a>
+        <a href="actors.html">Aktorzy</a>
+        <a href="songs.html">Utwory</a>
+    </nav>
+
+    <div class="container" id="content">
+        <h1>Musical Hamilton</h1>
+        <h2>Historia</h2>
+        <p><span class="highlight">Hamilton</span> to musical opowiadający historię Alexandra Hamiltona, jednego z ojców założycieli Stanów Zjednoczonych. Musical został stworzony przez Lin-Manuela Mirandę i miał swoją premierę na Broadwayu w 2015 roku.</p>
+        <p>Musical łączy elementy hip-hopu, R&B, popu, soulu i tradycyjnych numerów scenicznych. Jest oparty na biografii Hamiltona autorstwa Rona Chernowa.</p>
+        <img src="hamilton.jpg" alt="Hamilton Musical Poster">
+        
+        <h2>Zegar</h2>
+        <div id="clock"></div>
+
+        <h2>Aktorzy</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Postać</th>
+                    <th>Aktor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alexander Hamilton</td>
+                    <td>Lin-Manuel Miranda</td>
+                </tr>
+                <tr>
+                    <td>Aaron Burr</td>
+                    <td>Leslie Odom Jr.</td>
+                </tr>
+                <tr>
+                    <td>Eliza Hamilton</td>
+                    <td>Phillipa Soo</td>
+                </tr>
+                <tr>
+                    <td>George Washington</td>
+                    <td>Christopher Jackson</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Utwory</h2>
+        <ul>
+            <li><i>Alexander Hamilton</i></li>
+            <li><i>My Shot</i></li>
+            <li><i>The Schuyler Sisters</i></li>
+            <li><i>You'll Be Back</i></li>
+            <li><i>Wait For It</i></li>
+        </ul>
+
+        <h2>Linki zewnętrzne</h2>
+        <p>Więcej informacji znajdziesz na <a href="https://pl.wikipedia.org/wiki/Hamilton_(musical)" target="_blank">Wikipedii</a>.</p>
+    </div>
+
+</body>
+</html>

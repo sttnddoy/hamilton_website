@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Hamilton - Aktorzy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Historia</a>
+        <a href="actors.html">Aktorzy</a>
+        <a href="songs.html">Utwory</a>
+    </nav>
+
+    <div class="container">
+        <h1>Aktorzy</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Postać</th>
+                    <th>Aktor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alexander Hamilton</td>
+                    <td>Lin-Manuel Miranda</td>
+                </tr>
+                <tr>
+                    <td>Aaron Burr</td>
+                    <td>Leslie Odom Jr.</td>
+                </tr>
+                <tr>
+                    <td>Eliza Hamilton</td>
+                    <td>Phillipa Soo</td>
+                </tr>
+                <tr>
+                    <td>George Washington</td>
+                    <td>Christopher Jackson</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Więcej informacji na temat obsady musicalu <a href="https://www.ibdb.com/broadway-production/hamilton-499821" target="_blank">tutaj</a>.</p>
+    </div>
+
+</body>
+</html>
